@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+aiofiles
+pydantic
+python-multipart
+openpyxl
+xlsxwriter
+pytest
+pytest-asyncio

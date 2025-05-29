@@ -1,0 +1,31 @@
+# Python cache and virtual environments
+backend/__pycache__/
+backend/scanner/__pycache__/
+backend/tests/__pycache__/
+backend/venv/
+*.pyc
+*.pyo
+*.pyd
+
+# Pytest cache
+backend/.pytest_cache/
+
+# Exported files
+backend/exports/
+
+# Node modules (React)
+frontend/node_modules/
+
+# Logs and misc
+*.log
+*.sqlite3
+*.db
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Ignore test results and coverage (if added later)
+htmlcov/
+coverage.*
+.cache/
