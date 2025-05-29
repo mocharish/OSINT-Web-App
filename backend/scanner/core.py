@@ -113,8 +113,8 @@ async def scan_domain(domain: str):
     scan_status[domain]["status"] = "completed"
 
     artifacts = extract_artifacts(
-      scan_status[domain]["tools"].get("theHarvester", {}),
-      scan_status[domain]["tools"].get("amass", {})
+      scan_status[domain]["tools"].get("theHarvester", {}).get("results", {}),
+      scan_status[domain]["tools"].get("amass", {}).get("results", {})
     )
 
     summary = {k: len(v) for k, v in artifacts.items() if isinstance(v, list)}
